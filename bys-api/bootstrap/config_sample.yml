@@ -1,0 +1,19 @@
+service_name: bys-api
+
+log:
+  level: debug
+  format: json
+  dir: "./target/logs"
+
+rest_api:
+  listen_port: ":8080"
+
+host_status_rpc:
+  addr: "localhost:10086"
+
+mysql:
+  local:
+    addr: "localhost:3306"
+    dbname: hello
+    user: root
+    password: "root"

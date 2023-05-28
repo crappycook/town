@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "town/proto"; // In Go, the package is used as the Go package name, unless you explicitly provide an option go_package in your .proto file.
+
+package hoststatus;
+
+service HostStatusService {  
+    rpc GetStatus (GetStatusRequest) returns (GetStatusResponse);
+}
+
+message GetStatusRequest {}
+
+message GetStatusResponse {
+    string Hostname = 1;
+    int64 TimestampMs = 2;
+}
