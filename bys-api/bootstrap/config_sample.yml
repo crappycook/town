@@ -14,6 +14,6 @@ host_status_rpc:
 mysql:
   local:
     addr: "localhost:3306"
-    dbname: hello
+    dbname: local
     user: root
-    password: "root"
+    password: "root@localhost"
