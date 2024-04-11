@@ -16,4 +16,4 @@ mysql:
     addr: "localhost:3306"
     dbname: local
     user: root
-    password: "root@localhost"
+    password: "root"
